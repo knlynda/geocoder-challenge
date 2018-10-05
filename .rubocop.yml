@@ -1,0 +1,21 @@
+AllCops:
+  TargetRubyVersion: 2.5
+  ExtraDetails: true
+  DisplayCopNames: true
+  DisplayStyleGuide: true
+  Exclude:
+    - db/**/*
+    - vendor/**/*
+    - bin/*
+    - log/**/*
+    - public/**/*
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Style/Documentation:
+  Enabled: false
+Metrics/LineLength:
+  Enabled: true
+  Max: 120
+Metrics/BlockLength:
+  Exclude:
+    - spec/**/*.rb
